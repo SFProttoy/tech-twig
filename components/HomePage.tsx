@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import techtwigImg from "../public/logo.png";
 
+
 const HomePage = () => {
   const currentDate = new Date();
   const currentYear = currentDate.getFullYear();
@@ -71,7 +72,9 @@ const HomePage = () => {
                 involved:
               </p>
               <ul>
-                <li>Contribute to our open-source projects on GitHub.</li>
+                <li className="li">
+                  Contribute to our open-source projects on GitHub.
+                </li>
                 <li>
                   Participate in our community forum and help answer questions.
                 </li>
@@ -118,7 +121,13 @@ const HomePage = () => {
               <h1 style={{ textAlign: "center", marginBottom: "12px" }}>
                 Contact Us:
               </h1>
-              <p style={{ fontSize: "19px", textAlign: "justify" }}>
+              <p
+                style={{
+                  fontSize: "19px",
+                  textAlign: "justify",
+                  wordSpacing: "-3px",
+                }}
+              >
                 If you have any questions or comments about Tech Twig, please
                 contact us at techtwig14@gmail.com. You can also follow us on
                 Twitter and LinkedIn. Thank you for your interest in Tech Twig!
